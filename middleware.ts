@@ -4,7 +4,7 @@ import { NextResponse, type NextRequest } from "next/server";
 
 type Session = typeof auth.$Infer.Session;
 
-export async function proxy(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { data: session } = await betterFetch<Session>("/api/auth/get-session", {
     baseURL: request.nextUrl.origin,
     headers: {

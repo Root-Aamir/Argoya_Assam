@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"session\\\\|auth\" '/Users/yashsharma/Argoya Assam/my-project/app' --include=*.tsx --include=*.ts)"
+    ]
+  }
+}
